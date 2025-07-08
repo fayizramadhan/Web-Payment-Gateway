@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran Langsung</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e1e1e;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    .payment-option {
+      background: #2e2e2e;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .pay-btn {
+      margin-top: 1rem;
+      background: #00c6ff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .pay-btn:hover {
+      background: #009ace;
+    }
+
+    .qris-img {
+      width: 180px;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pembayaran Digital Langsung</h1>
+
+  <div class="payment-option">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_DANA.png" class="logo" alt="DANA" />
+    <div>No. Dana: 082217179612</div>
+    <a href="https://link.dana.id/send?phone=082217179612" target="_blank">
+      <button class="pay-btn">Bayar via Dana</button>
+    </a>
+  </div>
+
+  <div class="payment-option">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo_ovo_purple.svg" class="logo" alt="OVO" />
+    <div>No. OVO: 082250804883</div>
+    <a href="ovo://transfer?phone=082250804883">
+      <button class="pay-btn">Bayar via OVO</button>
+    </a>
+  </div>
+
+  <div class="payment-option">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Gopay_logo.svg" class="logo" alt="Gopay" />
+    <div>No. Gopay: 082350804883</div>
+    <a href="gopay://transfer?phone=082350804883">
+      <button class="pay-btn">Bayar via Gopay</button>
+    </a>
+  </div>
+
+  <div class="payment-option">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/QRIS_logo.svg" class="logo" alt="QRIS" />
+    <div>Scan QRIS untuk pembayaran</div>
+    <img src="https://qu.ax/acLyy.jpg" alt="QRIS" class="qris-img" />
+  </div>
+</body>
+</html>
